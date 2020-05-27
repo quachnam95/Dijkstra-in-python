@@ -1,5 +1,6 @@
 """
-The path with length D [k] = Min {D [i] | vi in V} is the shortest path from v0 (v0, vi). The next shortest path with the next shortest length (v0 to vj) is either directly an arc (v0, vj), the length is the weight on the arc, or (v0, vk, vj), and the length is D [k] (vk, vj) Weights on the arc.
+The path with length D [k] = Min {D [i] | vi in V} is the shortest path from v0 (v0, vi). 
+The next shortest path with the next shortest length (v0 to vj) is either directly an arc (v0, vj), the length is the weight on the arc, or (v0, vk, vj), and the length is D [k] (vk, vj) Weights on the arc.
 """
 from collections import defaultdict
 from heapq import *
@@ -62,7 +63,8 @@ print(dijkstra(edges, "F", "G"))
 """
 Result:
 === Dijkstra ===
-[('A', 'B', 7), ('A', 'D', 5), ('B', 'C', 8), ('B', 'D', 9), ('B', 'E', 7), ('C', 'E', 5), ('D', 'E', 15), ('D', 'F', 6), ('E', 'F', 8), ('E', 'G', 9), ('F', 'G', 11)]
+[('A', 'B', 7), ('A', 'D', 5), ('B', 'C', 8), ('B', 'D', 9), ('B', 'E', 7), ('C', 'E', 5), ('D', 'E', 15), 
+('D', 'F', 6), ('E', 'F', 8), ('E', 'G', 9), ('F', 'G', 11)]
 A -> E:
 (14, ('E', ('B', ('A', ()))))
 F -> G:
