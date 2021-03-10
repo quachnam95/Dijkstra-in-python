@@ -1,6 +1,7 @@
 """
 The path with length D [k] = Min {D [i] | vi in V} is the shortest path from v0 (v0, vi). 
-The next shortest path with the next shortest length (v0 to vj) is either directly an arc (v0, vj), the length is the weight on the arc, or (v0, vk, vj), and the length is D [k] (vk, vj) Weights on the arc.
+The next shortest path with the next shortest length (v0 to vj) is either directly an arc (v0, vj), the length is the weight on the arc, or (v0, vk, vj), 
+and the length is D [k] (vk, vj) Weights on the arc.
 """
 from collections import defaultdict
 from heapq import *
